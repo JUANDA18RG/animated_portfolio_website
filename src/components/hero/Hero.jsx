@@ -102,13 +102,13 @@ const Hero = () => {
           </div>
         </div>
         <div className="right top-5 flex-1 flex items-center justify-center md:items-end sm:items-end">
-          <div className="relative h-[88%] w-fit flex items-center sm:items-end">
+          <div className="relative h-[80%] w-fit flex items-center sm:items-end">
             <div className="rounded-full overflow-hidden w-96 h-96 md:w-96 md:h-96">
               <img
                 data-aos="fade-up"
                 className="w-full h-full object-cover"
                 src="https://i.postimg.cc/Cx2j9W1h/avatar.jpg"
-                alt="mine"
+                alt="me"
               />
             </div>
             <div className=" absolute bottom-10 md:bottom-3 right-8 md:right-2">
@@ -116,7 +116,7 @@ const Hero = () => {
                 <img
                   className=" w-[135px] md:w-[90px] circle-text"
                   src="https://ik.imagekit.io/imgkitt/tr:w-400/Full_Stack_Developer2.png?updatedAt=1683134009107"
-                  alt=""
+                  alt="Logo"
                 />
                 <FaPlay
                   className=" text-black absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"
