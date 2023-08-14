@@ -38,8 +38,6 @@ html {
 }
 
 
-
-
 /* Hero circular spin */
 .circle-text{
   -webkit-animation: spin 12s linear infinite;

@@ -62,7 +62,7 @@ const NavBar = ({ toggleDarkMode, darkMode }) => {
             to="/"
             className="text-3xl font-bold sm:text-3xl"
           >
-            John Doe.
+            MY PORTFOLIO 
           </Link>
         </div>
         <div
@@ -94,20 +94,20 @@ const NavBar = ({ toggleDarkMode, darkMode }) => {
                 key={item.id}
                 className="md:m-6 md:flex md:gap-6 md:items-center md:justify-center"
               >
-                <a
-                  onClick={() => toggleNav(item.name)}
-                  href={`#${item.name}`}
-                  className={`uppercase cursor-pointer text-black hover:text-yellow-600 font-bold ${
-                    item.name === activeIndex ? "text-yellow-600" : ""
-                  }`}
-                >
+               <a
+                onClick={() => toggleNav(item.name)}
+                href={`#${item.name}`}
+                className={`uppercase cursor-pointer text-black hover:text-purple-800 font-bold ${
+                  item.name === activeIndex ? "text-purple-800" : ""
+                }`}
+                      >
                   {item.name}
                 </a>
               </li>
             ))}
             <a
               href=""
-              className="bg-black text-[1rem] text-white px-8 py-2 rounded-lg font-bold hover:text-yellow-400 md:m-5 md:block md:mx-auto md:w-fit lg:px-3"
+              className="bg-black text-[1rem] text-white px-8 py-2 rounded-lg font-bold hover:text-purple-800 md:m-5 md:block md:mx-auto md:w-fit lg:px-3"
             >
               HIRE ME
             </a>
