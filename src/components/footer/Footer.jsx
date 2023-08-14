@@ -43,7 +43,7 @@ const Footer = () => {
           </a>
         </div>
         <div className="sm:text-[12px]">
-          | Copyright &copy; <span>2023 Dev AlphaSpace </span> All rights reserved
+          | Copyright &copy; <span>2023 Dev Juan David Ramirez </span> All rights reserved
           <a href="#"></a> |
         </div>
       </div>
