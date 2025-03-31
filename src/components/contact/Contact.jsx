@@ -6,9 +6,10 @@ const Contact = () => {
   return (
     <div id="contact" className="container m-auto mt-16">
       {/* heading */}
-      <div 
-      // data-aos="fade-up"
-       className="relative mb-5">
+      <div
+        // data-aos="fade-up"
+        className="relative mb-5"
+      >
         <h3 className=" text-3xl font-black text-gray-400 sm:text-2xl">
           Contact
         </h3>
@@ -19,10 +20,10 @@ const Contact = () => {
       <div className="card-wrapper w-[90%] sm:w-[100%] mx-auto mt-5 flex items-center justify-center sm:flex-col">
         <div className="left w-[70%] flex-1 flex items-center justify-center sm:flex-col sm:w-full">
           <div className="flex-3 w-1/2 gap-3 flex items-end justify-end  flex-col sm:w-3/4">
-            <div 
-            data-aos="zoom-in"
-            >
-              <h1 className="text-5xl font-bold sm:text-3xl">You Need</h1>
+            <div data-aos="zoom-in">
+              <h1 className="text-5xl font-bold sm:text-3xl text-red-500 animate-flip-up animate-infinite animate-duration-[5000ms] animate-delay-[2500ms] animate-ease-in-out">
+                You Need
+              </h1>
               <h3 className="text-xl sm:text-lg">
                 Beautiful design for your website leave a request
               </h3>
@@ -30,10 +31,8 @@ const Contact = () => {
           </div>
           <div className=" flex p-5 items-center justify-center ">
             <button
-              
               data-aos="zoom-in"
-              
-              className= " text-purple-800 font-extrabold text-3xl p-2 rounded-lg shadow-[0_0_10px_1px_rgba(0,0,0,0.1)] "
+              className=" text-red-500 font-extrabold text-3xl p-2 rounded-lg shadow-[0_0_10px_1px_rgba(0,0,0,0.1)]  animate-bounce animate-infinite animate-duration-500 animate-delay-[900ms] animate-ease-in-out"
             >
               <BsArrowRight className=" md:rotate-90" />
             </button>
@@ -41,9 +40,7 @@ const Contact = () => {
         </div>
         <div className="right flex-1">
           <form
-            
             data-aos="zoom-in"
-            
             className="flex justify-center items-center flex-col gap-5 w-[70%] md:w-[100%] sm:w-[95%] mx-auto"
             action="mailto:xyz@gmail.com"
           >
@@ -68,11 +65,11 @@ const Contact = () => {
               id=""
             />
             <button
-              className="bg-purple-800 w-full text-white font-semibold  p-2 rounded-lg flex items-center justify-center space-x-1"
+              className="bg-red-500 w-full text-white font-semibold  p-2 rounded-lg flex items-center justify-center space-x-1 hover:scale-105 transition duration-300"
               type="submit"
             >
               <span>Send</span>
-              <RiSendPlaneFill/>
+              <RiSendPlaneFill />
             </button>
           </form>
         </div>

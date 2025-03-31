@@ -16,7 +16,7 @@ const WorkCard = () => {
             key={data.id}
             className="flex flex-col justify-center items-center gap-4"
           >
-            <POPUP className="img-content relative">
+            <POPUP className="img-content relative animate-fade-up ">
               <div className="h-[280px] w-[380px] hover:scale-125 transition duration-500 cursor-pointer shadow-xl rounded-md overflow-hidden sm:h-[260px] sm:w-[92%] sm:bg-cover mx-auto ">
                 <img
                   src={data.img}
@@ -24,14 +24,20 @@ const WorkCard = () => {
                   className="object-fit w-full h-full hover:scale-125 transition duration-500 cursor-pointer"
                 />
               </div>
-              <div className={`popup w-full h-[280px] shadow-xl rounded-md overflow-hidden sm:h-[260px] sm:w-[92%] p-4`}>
-                <p className="text-gray-900 text-base leading-[1.4] text-justify w-[90%]">
+              <div
+                className={`popup w-full h-[280px] shadow-xl rounded-md overflow-hidden sm:h-[260px] sm:w-[92%] p-4`}
+              >
+                <p className="text-gray-900 text-base leading-[1.4] text-justify w-[90%] hover:animate-fade-down animate-duration-[900ms] animate-delay-500 animate-ease-in-out ">
                   {data.desc}
                 </p>
-                <div className="flex items-center justify-center gap-4">
-                  <Link to={data.git} target="_blank" className="mt-3 rounded-md shadow-md p-1 px-2 flex gap-2 items-center justify-center font-medium">
-                    <AiOutlineGithub className="text-black bg-white rounded-full border w-[35px] h-[35px] p-2" />
-                    <p className="text-black">Code</p>
+                <div className="flex items-center justify-center gap-4  animate-wiggle animate-infinite animate-duration-500 animate-delay-[900ms] animate-ease-in-out hover:animate-none">
+                  <Link
+                    to={data.git}
+                    target="_blank"
+                    className="mt-3  shadow-xl p-1 px-2 flex gap-2 items-center justify-center font-medium border-4 rounded-xl bg-white"
+                  >
+                    <AiOutlineGithub className="text-white bg-red-500 rounded-full border w-[35px] h-[35px] p-2" />
+                    <p className="text-black">Repository</p>
                   </Link>
                 </div>
               </div>
@@ -39,7 +45,7 @@ const WorkCard = () => {
             <p
               className="text-gray-800 text-xl font-medium sm:text-lg 
                          transition-colors duration-300 
-                         border-b-4 border-purple-500 
+                         border-b-4 border-red-500 
                          hover:border-blue-300"
             >
               {data.title}

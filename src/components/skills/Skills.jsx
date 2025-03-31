@@ -4,19 +4,23 @@ import SkillBox from "../../chip/SkillBox";
 
 import { IoLogoHtml5, IoLogoCss3 } from "react-icons/io";
 
-
 import {
   SiJavascript,
   SiBootstrap,
-  SiJava,
   SiPython,
   SiCplusplus,
-  SiMysql
+  SiMysql,
+  SiMaterialdesign,
+  SiTailwindcss,
+  SiMongodb,
+  SiVite,
+  SiPostgresql,
+  SiTypescript,
 } from "react-icons/si";
-import { FaReact } from "react-icons/fa";
+import { FaReact, FaJava } from "react-icons/fa";
 import { IoLogoNodejs } from "react-icons/io";
 
-const Skills = ({ darkMode }) => {
+const Skills = () => {
   return (
     <div id="skills">
       <div className=" container m-auto  mt-16">
@@ -55,59 +59,78 @@ const Skills = ({ darkMode }) => {
                   name={"Bootstrap"}
                   value={70}
                 />
+                <ProgressBar logo={<SiMysql />} name={"MySql"} value={50} />
                 <ProgressBar
-                  logo={<SiMysql />}
-                  name={"MySql"}
-                  value={40}
+                  logo={<SiTailwindcss />}
+                  name={"Tailwind CSS"}
+                  value={80}
+                />
+                <ProgressBar
+                  logo={<SiMaterialdesign />}
+                  name={"Material UI"}
+                  value={60}
+                />
+                <ProgressBar
+                  logo={<SiTypescript />}
+                  name={"TypeScript"}
+                  value={50}
+                />
+                <ProgressBar
+                  logo={<SiPostgresql />}
+                  name={"PostgreSQL"}
+                  value={50}
                 />
               </div>
             </div>
           </div>
           {/* right box */}
           <div className="right relative flex-1 flex flex-wrap p-5 gap-10 items-center justify-center sm:w-full">
-            <div className="first2 flex flex-col gap-10">
+            <div className="first2 flex flex-col gap-10 items-center justify-center animate-jump-in animate-once animate-duration-[900ms] animate-delay-500 animate-ease-in-out">
               <SkillBox
                 logo={<IoLogoNodejs />}
-                black={"white"}
-                white={"black"}
+                black={"black"}
+                white={"white"}
                 skill={"Node Js"}
               />
               <SkillBox
-                logo={<SiJava />}
+                logo={<FaJava />}
                 black={"white"}
                 white={"black"}
                 skill={"Java"}
               />
             </div>
-            <div className="last2 flex flex-col gap-10">
+            <div className="last2 flex flex-col gap-10 animate-jump-in animate-once animate-duration-[1200ms] animate-delay-500 animate-ease-in-out">
               <SkillBox
                 logo={<SiPython />}
-                black={"black"}
-                white={"white"}
+                black={"white"}
+                white={"black"}
                 skill={"Python"}
               />
               <SkillBox
                 className=""
-                logo={
-                  <SiCplusplus/>
-                }
+                logo={<SiCplusplus />}
                 black={"black"}
                 white={"white"}
                 skill={"C++"}
               />
-              {/* <SkillBox
-                className=""
-                logo={
-                  <SiNextdotjs className=" text-white bg-black rounded-full h-fit border-white overflow-hidden" />
-                }
+            </div>
+            <div className="last2 flex flex-col gap-10 animate-jump-in animate-once animate-duration-[1500ms] animate-delay-500 animate-ease-in-out">
+              <SkillBox
+                logo={<SiMongodb />}
                 black={"black"}
                 white={"white"}
-                skill={"Next Js"}
-              /> */}
+                skill={" MongoDB"}
+              />
+              <SkillBox
+                className=""
+                logo={<SiVite />}
+                black={"white"}
+                white={"black"}
+                skill={" Vite"}
+              />
             </div>
           </div>
         </div>
-
       </div>
     </div>
   );

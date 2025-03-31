@@ -6,23 +6,23 @@ import { RxCross2 } from "react-icons/rx";
 const navItems = [
   {
     id: 0,
-    name: "home",
+    name: "🏠 home",
   },
   {
     id: 1,
-    name: "skills",
+    name: "🥷 skills",
   },
   {
     id: 2,
-    name: "works",
+    name: "⚒️ works",
   },
   {
     id: 3,
-    name: "resume",
+    name: "🗞️ resume",
   },
   {
     id: 4,
-    name: "contact",
+    name: "📱 contact",
   },
 ];
 
@@ -55,14 +55,14 @@ const NavBar = ({ toggleDarkMode, darkMode }) => {
         scrollPosition > 0 ? `bg-white shadow-md` : "bg-transparent"
       } `}
     >
-      <nav className=" container m-auto flex items-center justify-between">
-        <div data-aos="fade-down" className="logo">
+      <nav className=" container m-auto flex items-center justify-between animate-fade-down">
+        <div data-aos="fade-down" className="logo animate-fade-right">
           <Link
             onClick={() => window.scrollTo(0, 0)}
             to="/"
-            className="text-3xl font-bold sm:text-3xl"
+            className="text-3xl font-bold sm:text-3xl "
           >
-            MY PORTFOLIO 
+            MY PORTFOLIO
           </Link>
         </div>
         <div
@@ -92,25 +92,22 @@ const NavBar = ({ toggleDarkMode, darkMode }) => {
             {navItems.map((item) => (
               <li
                 key={item.id}
-                className="md:m-6 md:flex md:gap-6 md:items-center md:justify-center"
+                className="md:m-6 md:flex md:gap-6 md:items-center md:justify-center hover:animate-jump"
               >
-               <a
-                onClick={() => toggleNav(item.name)}
-                href={`#${item.name}`}
-                className={`uppercase cursor-pointer text-black hover:text-purple-800 font-bold ${
-                  item.name === activeIndex ? "text-purple-800" : ""
-                }`}
-                      >
+                <a
+                  onClick={() => toggleNav(item.name)}
+                  href={`#${item.name}`}
+                  className={`uppercase cursor-pointer text-black hover:text-red-500 font-bold  ${
+                    item.name === activeIndex ? "text-red-500" : ""
+                  }`}
+                >
                   {item.name}
                 </a>
               </li>
             ))}
-            <a
-              href=""
-              className="bg-black text-[1rem] text-white px-8 py-2 rounded-lg font-bold hover:text-purple-800 md:m-5 md:block md:mx-auto md:w-fit lg:px-3"
-            >
-              HIRE ME
-            </a>
+            <div className="bg-black text-[1rem] text-white px-8 py-2 rounded-lg font-bold hover:text-red-800 hover:bg-white md:m-5 md:block md:mx-auto md:w-fit lg:px-3 animate-flip-up animate-duration-[900ms] animate-delay-[900ms] animate-ease-in-out animate-normal">
+              Juan David Ramirez Grismaldo ❤️
+            </div>
           </ul>
         </div>
       </nav>
